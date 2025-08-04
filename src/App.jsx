@@ -1,11 +1,5 @@
 import "./App.css";
 
-const articleStyles = {
-  container: "article",
-  title: "article-title",
-  body: "article-body",
-  link: "article-link",
-};
 
 function getCurrentDateTime() {
   const now = new Date();
@@ -19,6 +13,13 @@ function getCurrentDateTime() {
 }
 
 function IntroSection() {
+  const articleStyles = {
+    container: "article",
+    title: "article-title",
+    body: "article-body",
+    link: "article-link",
+  };
+
   return (
     <div className={articleStyles.container}>
       <h3 className={articleStyles.title}>TechUp Thailand</h3>
